@@ -27,7 +27,7 @@ function call(string $method, string $url, ?string $body = null): string
 }
 
 $query = http_build_query([
-    'query' => 'YOUR_VALUE'
+    'query' => 'what is mozilla firefox'
 ]);
 $response = call('GET', 'https://api.autom.dev/v1/google/search/ai' . ($query ? '?' . $query : ''));
 
