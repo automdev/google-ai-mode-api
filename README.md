@@ -53,8 +53,11 @@ Query Google AI Mode via API. JSON with text_blocks, references, and shopping_re
 | `query` | query | string | ✅ | The question or search query you want Google AI Mode to answer (supports advanced operators like `site:`, `inurl:`, `intitle:`). |
 | `location` | query | string | — | Human-readable location to originate the search from (e.g. `New York, NY`, `Paris, France`). If several locations match, the most popular one is used. Note: `location` and `uule` cannot be used together. |
 | `uule` | query | string | — | Google encoded location parameter. Use for precise geo targeting. Note: `uule` and `location` cannot be used together. |
-| `gl` | query | string | — | Country to use for the Google AI Mode search (two-letter country code, e.g. `us`, `fr`). |
-| `hl` | query | string | — | Language to use for the Google AI Mode search (two-letter language code, e.g. `en`, `fr`). |
+| `google_domain` | query | string | — | Google domain to use for the search. Defaults to `google.com`. |
+| `gl` | query | string | — | Country to use for the Google search. Two-letter country code (e.g. `us` for the United States, `uk` for United Kingdom, or `fr` for France). |
+| `hl` | query | string | — | Language to use for the Google search. Two or three-letter language code (e.g. `en`, `es`, `fr`), optionally followed by a region code (e.g. `en-gb`, `es-419`). |
+| `cr` | query | string | — | Limit results to one or more countries. Use `country{XX}` with `\|` as delimiter (e.g. `countryFR\|countryDE`). |
+| `lr` | query | string | — | Limit results to one or more languages. Use `lang_{xx}` with `\|` as delimiter (e.g. `lang_fr\|lang_de`). |
 
 ### Python example
 
